@@ -18,8 +18,8 @@ public class Main {
 
         ArrayList<Buffalo> animals = new ArrayList<>();
 
-        Buffalo timmy = new Buffalo(world, "Timmy", 3.0, 0, 0, 2, 2);
-        animals.add(timmy);
+        Buffalo tommy = new Buffalo(world, "Tommy", 3.0, 0, 0, 2, 2);
+        animals.add(tommy);
 
         while(true) {
             for(Buffalo animal: animals) {

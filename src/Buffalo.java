@@ -23,7 +23,7 @@ public class Buffalo {
         this.thirstLevel = thirstLevel;
         this.xPosition = xPosition;
         this.yPosition = yPosition;
-        currentView = new AnimalView(world.getWorld(), xPosition, yPosition);
+        this.currentView = new AnimalView(world.getWorld(), xPosition, yPosition);
     }
 
     public static void performBDI() {
