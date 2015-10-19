@@ -5,8 +5,16 @@ public class Environment {
 
     private Area[][] world;
 
-    public Environment() {
-        world = new Area[180][180];
+    public Environment(int xSize, int ySize) {
+        world = new Area[xSize][ySize];
+    }
+
+    public Area getArea(int xPosition, int yPosition) {
+        return world[xPosition][yPosition];
+    }
+
+    public void setArea(Area area, int xPosition, int yPosition) {
+        world[xPosition][yPosition] = area;
     }
 
     public Area[][] getWorld() {

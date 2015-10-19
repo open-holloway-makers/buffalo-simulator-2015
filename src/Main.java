@@ -6,11 +6,19 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        Environment world = new Environment();
+        Environment world = new Environment(5, 5);
+
+        //create a mock world
+        for(int i=0; i<5; i++) {
+            for(int j=0; j<5; j++) {
+                Area area = new Area(i+20, "Grassland", "Sunny");
+                world.setArea(area, i, j);
+            }
+        }
 
         ArrayList<Buffalo> animals = new ArrayList<>();
 
-        Buffalo timmy = new Buffalo(world, "Timmy", 3.0, 0, 0, 90, 90);
+        Buffalo timmy = new Buffalo(world, "Timmy", 3.0, 0, 0, 2, 2);
         animals.add(timmy);
 
         while(true) {
