@@ -26,7 +26,7 @@ public class Buffalo {
         this.currentView = new AnimalView(world.getWorld(), xPosition, yPosition);
     }
 
-    public static void performBDI() {
+    public void performBDI() {
 
     }
 

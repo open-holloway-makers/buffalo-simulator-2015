@@ -11,8 +11,8 @@ public class AnimalView {
 
     public void updateView(Area[][] world, int xPosition, int yPosition) {
         this.view = new Area[3][3];
-        for(int i=0; i<3; i++) {
-            for(int j=0; j<3; j++) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 this.view[i][j] = new Area(world[xPosition][yPosition].getTemperature(), world[xPosition][yPosition].getGroundType(), world[xPosition][yPosition].getWeather());
             }
         }
