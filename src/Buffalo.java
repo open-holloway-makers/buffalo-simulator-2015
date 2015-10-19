@@ -27,7 +27,11 @@ public class Buffalo {
     }
 
     public void performBDI() {
+        moo();
+    }
 
+    public void moo() {
+        System.out.println("Moo!");
     }
 
     public String getName() {
