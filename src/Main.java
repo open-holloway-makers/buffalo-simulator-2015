@@ -18,7 +18,7 @@ public class Main {
 
         ArrayList<Buffalo> animals = new ArrayList<>();
 
-        Buffalo tommy = new Buffalo(world, "Tommy", 3.0, 0, 0, 2, 2);
+        Buffalo tommy = new Buffalo(world, "Timmy", 3.0, 0, 0, 2, 2);
         animals.add(tommy);
 
         while(true) {
